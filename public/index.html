@@ -5,7 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- <link rel="stylesheet" href="//at.alicdn.com/t/font_1199811_puwoefft8rd.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1210941_9we6axl7015.css"> -->
     <title>nuxt-admin</title>
+    <style>
+    /*
+ *移动端初始化样式表
+ * */
+body{
+    margin: 0;
+    padding: 0;
+    }
+body *{
+    -webkit-text-size-adjust: none; /*禁止用户设置字体大小*/
+    -webkit-user-select: none; /*禁止用户选中文字（安卓无效）*/
+    }
+a{
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /*去掉点击阴影 */
+}
+a,input,button{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-appearance: none;
+}
+
+/*
+ * PC端初始化样式，PC端
+ */
+body,p,div,ul,li,form,input,td,tr,th,div{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+img{
+    border: none;
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /*IOS高亮*/
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+a:link{
+	text-decoration:none;
+	}
+button{
+    cursor: pointer; /*鼠标光标的类型*/
+}
+input,textarea{
+    outline: none;
+}
+input,button{
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /*IOS高亮*/
+	border-radius: 0;
+	-webkit-appearance: none; /*去除IOS默认圆角*/
+}
+textarea{
+    resize: none;
+    overflow: auto;
+}
+table{
+    border-collapse: collapse;
+}
+em{
+    font-style: normal;
+}
+
+    </style>
   </head>
   <body>
     <noscript>
