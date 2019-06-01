@@ -1,25 +1,50 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
-<style lang="stylus">
-#app
-  font-family 'Avenir', Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
+<style scoped>
 
-#nav
-  padding 30px
-  a
-    font-weight bold
-    color #2c3e50
-    &.router-link-exact-active
-      color #42b983
+#app{
+ width: 100%;
+  
+} 
 </style>
+
+<script>
+export default {
+  data(){
+    return {
+      token:''
+    }
+  },
+  created:function(){
+    this.$http({  
+                method:'GET',
+                url: ''
+            }).then((res)=>{
+                // console.log(res.data)
+               if(res.data.code==0){
+                 this.$store.commit('addtoken',res.data.token)
+               }
+            })
+     // 查询全部分类
+      this.$http({  
+                method:'POST',
+                url: 'searchcls'
+            }).then((res)=>{
+               // console.log(res.data)
+                this.$store.commit('addClsList',res.data.data)
+            })
+        // 查询全部标签
+      this.$http({
+                method:'POST',
+                url: 'searchtable'
+            }).then((res)=>{
+                //console.log(res.data)
+                this.$store.commit('addTablesList',res.data.data)
+               // this.$store.state.tablesList=res.data.data
+            })  
+  }
+}
+</script>

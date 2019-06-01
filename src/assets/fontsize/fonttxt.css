@@ -1,0 +1,14 @@
+@font-face {
+font-family: '阿里普惠体'; /*字体的名字*/
+src: url('Alibaba-PuHuiTi-Light.otf') format('truetype'); /*字体文件的路径*/
+src: url('Alibaba-PuHuiTi-Bold.otf') format('truetype'); /*字体文件的路径*/
+src: url('Alibaba-PuHuiTi-Heavy.otf') format('truetype'); /*字体文件的路径*/
+src: url('Alibaba-PuHuiTi-Medium.otf') format('truetype'); /*字体文件的路径*/
+src: url('Alibaba-PuHuiTi-Regular.otf') format('truetype'); /*字体文件的路径*/
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=SimSun]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=SimSun]::before {
+    content: "阿里普惠体";
+    font-family: "SimSun";
+}
