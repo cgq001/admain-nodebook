@@ -1,3 +1,4 @@
+项目地址：http://admain.nodebook.top
 # nuxt-admin
 
 ## 初始化
