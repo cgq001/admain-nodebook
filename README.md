@@ -1,5 +1,5 @@
-项目地址：http://admain.nodebook.top
-需要配合  后台接口： https://github.com/cgq001/node-nodebook (具体需要自己修该简单的配置参数才能运行，有不明确的欢迎联系：QQ：2927756015)
+#### 项目地址：http://admain.nodebook.top
+#### 需要配合  后台接口： https://github.com/cgq001/node-nodebook (具体需要自己修该简单的配置参数才能运行，有不明确的欢迎联系：QQ：2927756015)
 # nuxt-admin
 
 ## 初始化
